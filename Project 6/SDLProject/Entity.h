@@ -1,5 +1,5 @@
 #pragma once
-enum EntityType { NOTE, KEY };
+enum EntityType { NOTE, KEY, OBJECT};
 
 class Entity {
 private:

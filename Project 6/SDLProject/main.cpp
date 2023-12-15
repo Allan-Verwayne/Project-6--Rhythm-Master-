@@ -69,8 +69,6 @@ glm::mat4 g_view_matrix, g_projection_matrix;
 float g_previous_ticks = 0.0f;
 float g_accumulator = 0.0f;
 
-int num_lives;
-
 void switch_to_scene(Scene* scene) {
     g_current_scene = scene;
     g_current_scene->initialise();
@@ -185,28 +183,6 @@ void process_input() {
                 break;
         }
     }
-
-//    const Uint8* key_state = SDL_GetKeyboardState(NULL);
-
-    if (g_current_scene != g_start_screen) {
-//        if (key_state[SDL_SCANCODE_LEFT]) {
-//        }
-//        else if (key_state[SDL_SCANCODE_DOWN]) {
-//        }
-//        else if (key_state[SDL_SCANCODE_UP]) {
-//        }
-//        else if (key_state[SDL_SCANCODE_RIGHT]) {
-//        }
-        
-//        if (g_current_scene->m_state.keys[0].get_key_active()) {
-//            std::cout << "active" << std::endl;
-//        }
-//        else { std::cout << "not active" << std::endl; }
-//        if (g_current_scene->m_state.keys[0].check_collision(g_current_scene->m_state.notes)) {
-//            std::cout << "collided" << std::endl;
-//        }
-    }
-
 }
 
 void update() {

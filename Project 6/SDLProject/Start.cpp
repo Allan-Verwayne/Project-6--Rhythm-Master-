@@ -17,7 +17,7 @@ void Start_Menu::initialise() {
     Mix_PlayMusic(m_state.music, -1);
     Mix_VolumeMusic(MIX_MAX_VOLUME / 16.0f);
     
-    m_state.next_scene_id = 1;
+    m_state.next_scene_id = 0;
     
 }
 

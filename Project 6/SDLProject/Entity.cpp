@@ -72,8 +72,6 @@ void Entity::update(float delta_time, Entity* note, int num_notes, float bpm) {
         if (m_entity_type == KEY && check_collision(c_entity) && key_active) {
             c_entity->hit_note();
             c_entity->deactivate();
-            // play sound
-            
         }
     }
     
