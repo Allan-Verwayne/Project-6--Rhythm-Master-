@@ -128,7 +128,7 @@ void process_input() {
             case SDL_KEYDOWN:
                 switch (event.key.keysym.sym) {
                     case SDLK_LEFT:
-                        if (g_current_scene != g_start_screen) {
+                        if (g_current_scene == g_song) {
                             g_current_scene->m_state.keys[0].key_hit();
                             Mix_PlayChannel(-1, g_current_scene->m_state.tap, 0);
                         }
@@ -136,14 +136,14 @@ void process_input() {
                         
                         // Down Input
                     case SDLK_DOWN:
-                        if (g_current_scene != g_start_screen) {
+                        if (g_current_scene == g_song) {
                             g_current_scene->m_state.keys[1].key_hit();
                             Mix_PlayChannel(-1, g_current_scene->m_state.tap, 0);
                         }
                         break;
                         
                     case SDLK_UP:
-                        if (g_current_scene != g_start_screen) {
+                        if (g_current_scene == g_song) {
                             g_current_scene->m_state.keys[2].key_hit();
                             Mix_PlayChannel(-1, g_current_scene->m_state.tap, 0);
                         }
@@ -151,7 +151,7 @@ void process_input() {
                         
                         
                     case SDLK_RIGHT:
-                        if (g_current_scene != g_start_screen) {
+                        if (g_current_scene == g_song) {
                             g_current_scene->m_state.keys[3].key_hit();
                             Mix_PlayChannel(-1, g_current_scene->m_state.tap, 0);
                         }
