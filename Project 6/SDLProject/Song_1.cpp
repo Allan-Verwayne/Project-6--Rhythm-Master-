@@ -133,7 +133,7 @@ void Song_1::render(ShaderProgram *program) {
     }
     
     // Score
-    Utility::draw_text(program, font_texture_id, std::to_string(SCORE), 1.0f, -1.0f, glm::vec3(3.5f,  3.0f, 0.0f));
+    Utility::draw_text(program, font_texture_id, std::to_string(SCORE), 1.0f, -0.5f, glm::vec3(3.5f,  3.0f, 0.0f));
     
     // Keys
     for (int k = 0; k < KEY_COUNT; k++) {
