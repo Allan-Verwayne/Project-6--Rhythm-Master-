@@ -61,6 +61,9 @@ void Result::render(ShaderProgram *program) {
     if (lives == 0) {
         Utility::draw_text(program, font_texture_id, "FAILED...", 1.0f, -0.3f, glm::vec3(-3.0f,  1.0f, 0.0f));
     }
+    else if (lives == 10){
+        Utility::draw_text(program, font_texture_id, "FULL COMBO!", 1.0f, -0.3f, glm::vec3(-3.5f,  1.0f, 0.0f));
+    }
     else {
         Utility::draw_text(program, font_texture_id, "SONG CLEAR!", 1.0f, -0.3f, glm::vec3(-3.5f,  1.0f, 0.0f));
     }
